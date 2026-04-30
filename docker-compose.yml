@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  windrose:
+    image: jcivitell/windrose
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+      - "jcivitell/windrose:${CIRCLE_BRANCH:-master}"
+      - "jcivitell/windrose:${CIRCLE_TAG:-latest}"
+    ports:
+      - "7777:7777/tcp"
+      - "7777:7777/udp"
+    volumes:
+      - ./windrose-data:/home/steam/windrose-dedicated
+    environment:
+      - WR_SERVERNAME=Windrose Server
+      - WR_INVITECODE=CHANGE
+      - WR_MAXPLAYERS=4
+      - WR_PASSWORD=
+    restart: unless-stopped
