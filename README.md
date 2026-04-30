@@ -8,7 +8,7 @@
 # What is Windrose?
 Windrose is a survival crafting game where players explore mysterious islands, gather resources, build shelters, and survive against the elements. This Docker image contains the dedicated server for the game.
 
-<a href="https://store.steampowered.com/app/3041230/Windrose/"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3041230/header.jpg" alt="logo" width="400"/></img></a>
+<a href="https://store.steampowered.com/app/3041230/Windrose/"><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3041230/7e838d87d787735d5d29d72777c5ee55653dfb2b/header.jpg" alt="logo" width="400"/></img></a>
 
 ---
 
